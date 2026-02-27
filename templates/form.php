@@ -1,6 +1,6 @@
 		<form method="POST" action="" class="converter-form">
 			<div class="input-group">
-				<label for="value">Enter the length to convert</label>
+				<label for="value">Enter the value to convert</label>
 				<input type="number" step="any" name="value" value="<?= htmlspecialchars($value) ?>" min="<?= $unitFrom === "kelvin" ? 0 : "" ?>" required/>
 			</div>
 
