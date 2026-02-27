@@ -6,6 +6,42 @@ body {
   background-color: #111;
 }
 
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  .container {
+    width: 100vw;
+    min-width: 0;
+    padding: 5px;
+    border-width: 2px;
+    box-shadow: none;
+  }
+  .card {
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+  h1 {
+    font-size: 28px;
+    word-break: break-word;
+    margin-bottom: 10px;
+  }
+  .tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .tabs a {
+    font-size: 16px;
+    padding: 4px 8px;
+    white-space: nowrap;
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -17,6 +53,13 @@ body {
   width: 500px;
   min-height: 500px;
   box-shadow: 5px 5px 0px #eee;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 h1 {
