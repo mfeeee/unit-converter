@@ -1,7 +1,7 @@
 		<form method="POST" action="" class="converter-form">
 			<div class="input-group">
 				<label for="value">Enter the value to convert</label>
-				<input type="number" step="any" name="value" value="<?= htmlspecialchars($value) ?>" min="<?= $unitFrom === "kelvin" ? 0 : "" ?>" required/>
+				<input type="number" inputmode="decimal" step="any" name="value" value="<?= htmlspecialchars($value) ?>" min="<?= $unitFrom === "kelvin" ? 0 : "" ?>" required/>
 			</div>
 
 			<?php if(!empty($errorMessage)): ?>
