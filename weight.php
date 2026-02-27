@@ -10,6 +10,7 @@ $result = null;
 $units = $weights;
 $pageTitle = "Weight Converter";
 $currentPage = 'weight';
+$errorMessage = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Retrieve the data from $POST

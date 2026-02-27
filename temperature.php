@@ -11,6 +11,7 @@ $units = $temperatures;
 $category = 'temperature';
 $pageTitle = "Temperature Converter";
 $currentPage = 'temperature';
+$errorMessage = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Retrieve the data from $POST

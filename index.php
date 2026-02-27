@@ -10,6 +10,7 @@ $result = null;
 $pageTitle = "Length Converter";
 $units = $lengths;
 $currentPage = 'length';
+$errorMessage = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Retrieve the data from $POST
