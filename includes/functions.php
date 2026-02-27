@@ -1,6 +1,6 @@
 <?php
 
-function convertUnits($value, $from, $to, $unitArray = "temperature" , $category = "linear") {
+function convertUnits($value, $from, $to, $unitArray = [] , $category = "linear") {
     if ($category === 'temperature') {
         if ($from === 'celsius' && $to === 'fahrenheit') {
             return ($value * 9/5) + 32;
